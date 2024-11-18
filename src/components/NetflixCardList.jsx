@@ -6,7 +6,7 @@ export const NetflixCardList = (props) => {
 	const btnStyle = {
 		width: "10rem",
 		fontSize: "1rem",
-		backgroundColor: "#3196BD",
+		backgroundColor: `${rating > 8.2 ? "#DB2929": "#3136BD"}`,
 		color: "white",
 		borderRadius: "10px",
 	};
@@ -18,7 +18,7 @@ export const NetflixCardList = (props) => {
 			</div>
 			<div className="card-content">
 				<h2>Name: {name}</h2>
-				<h3>Rating:<span className="rating" >{rating}</span></h3>
+				<h3>Rating:<span className={`rating ${rating > 8.2 ? "rating-up": "rating-down"}`} >{rating}</span></h3>
 				<p>Description: {description}</p>
 				<p>Genre: {genre}</p>
 				<p>Cast: {cast}</p>

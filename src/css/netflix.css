@@ -53,4 +53,15 @@ a {
 
 .rating {
     font-style: italic;
+    width: 1rem;
+    padding: 0 1rem;
+    border-radius: 10px;
+}
+
+.rating-up {
+    background-color: #DB2929;
+}
+
+.rating-down {
+    background-color: #3136BD;
 }
