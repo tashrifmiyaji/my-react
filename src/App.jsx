@@ -1,3 +1,4 @@
+import "./index.css";
 import { Netflix } from "./components/NetflixCard";	
 
 function App() {
