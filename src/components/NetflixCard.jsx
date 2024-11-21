@@ -1,19 +1,12 @@
 import netflixSeriesData from "../api/data.json";
 import { NetflixCardList } from "./NetflixCardList";
 
-// in the react css file is global file, if i use global css file in the parent jsx file then it's class will be accessible in the all children file.
-// global css file import system like this (import "../css/netflix.css";). on the other hand css module file. module file import system like this (import style from "../css/netflix.module.css";)
-
-// if i use css module then Each class will be treated like a property of the object. and it not accessible in the children file, If I want to use then I have to import each file anew.
-// and css module And behind the scene css module makes each class unique.(ist beauty of css module)
-import style from "../css/netflix.module.css";
-
 export const Netflix = () => {
 	return (
 		<>
-			<h1>List of Best Netflix Series</h1>
-			<div className={style.container}>
-				<ul className={`${style.grid} ${style["grid-three-clos"]}`}>
+			<h1 className="text-center text-4xl pt-3 pb-3 border-b-2 border-b-stone-950	">List of Best Netflix Series</h1>
+			<div className="flex justify-center items-center mt-8 mb-10">
+				<ul className="grid gap-[9.6rem] grid-cols-3">
 					{netflixSeriesData.map((item) => (
 						<NetflixCardList item={item} key={item.id} />
 					))}
