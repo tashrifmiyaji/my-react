@@ -6,13 +6,13 @@ import { NetflixCardList } from "./NetflixCardList";
 
 // if i use css module then Each class will be treated like a property of the object. and it not accessible in the children file, If I want to use then I have to import each file anew.
 // and css module And behind the scene css module makes each class unique.(ist beauty of css module)
-import style from "../css/netflix.module.css"
+import style from "../css/netflix.module.css";
 
 export const Netflix = () => {
 	return (
 		<>
+			<h1>List of Best Netflix Series</h1>
 			<div className={style.container}>
-				<h1>List of Best Netflix Series</h1>
 				<ul className={`${style.grid} ${style["grid-three-clos"]}`}>
 					{netflixSeriesData.map((item) => (
 						<NetflixCardList item={item} key={item.id} />
