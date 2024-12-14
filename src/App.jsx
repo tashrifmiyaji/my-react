@@ -1,12 +1,14 @@
 import "./index.css";
-import { Netflix } from "./components/netflixCard/NetflixCard";	
+// import { Netflix } from "./components/netflixCard/NetflixCard";	
 // import {EventHandling} from "./components/eventHandling/eventHandling"
+import { EventProps } from "./components/reactEvent/eventProps";
 
 function App() {
 	return (
 		<>
-			<Netflix />
+			{/* <Netflix /> */}
 			{/* <EventHandling/> */}
+			<EventProps/>
 		</>
 	);
 }
