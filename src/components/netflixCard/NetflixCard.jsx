@@ -1,4 +1,4 @@
-import netflixSeriesData from "../api/data.json";
+import netflixSeriesData from "../../api/data.json";
 import { NetflixCardList } from "./NetflixCardList";
 
 export const Netflix = () => {
@@ -8,7 +8,7 @@ export const Netflix = () => {
 			<div className="flex justify-center items-center mt-8 mb-10">
 				<ul className="grid gap-[9.6rem] grid-cols-3">
 					{netflixSeriesData.map((item) => (
-						<NetflixCardList item={item} key={item.id} />
+						<NetflixCardList item={item} key={item.id} /> 
 					))}
 				</ul>
 			</div>
