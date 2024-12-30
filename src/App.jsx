@@ -3,7 +3,8 @@ import "./index.css";
 // import {EventHandling} from "./components/eventHandling/eventHandling"
 // import { EventProps } from "./components/reactEvent/eventProps";
 // import { State } from "./components/Hook/State";
-import { Practice1 } from "./components/Derived State/practice/practice1";
+// import { Practice1 } from "./components/Derived State/practice/practice1";
+import { DerivedState } from "./components/Derived State/Derived State";
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 			{/* <EventHandling/> */}
 			{/* <EventProps/> */}
 			{/* <State/> */}
-			<Practice1/>
+			{/* <Practice1/> */}
+			<DerivedState/>
 		</>
 	);
 }
