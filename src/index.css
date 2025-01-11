@@ -4,7 +4,10 @@
 
 * {
     margin: 0px;
-    background-color: rgb(145, 147, 103);
     list-style: none;
     text-decoration: none;
+}
+
+body {
+    background-color: rgb(145, 147, 103);
 }

@@ -4,7 +4,8 @@ import "./index.css";
 // import { EventProps } from "./components/reactEvent/eventProps";
 // import { State } from "./components/Hook/State";
 // import { Practice1 } from "./components/Derived State/practice/practice1";
-import { DerivedState } from "./components/Derived State/Derived State";
+// import { DerivedState } from "./components/Derived State/Derived State";
+ import { LiftingStateUp } from "./components/Lifting State Up/LiftingStateUp";
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
 			{/* <EventProps/> */}
 			{/* <State/> */}
 			{/* <Practice1/> */}
-			<DerivedState/>
+			{/* <DerivedState/> */}
+			<LiftingStateUp/>
 		</>
 	);
 }
