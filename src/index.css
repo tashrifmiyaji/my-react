@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+      @apply text-4xl;
+      @apply font-bold;
+    }
+    h2 {
+      @apply text-3xl;
+      @apply font-bold;
+    }
+    h3 {
+      @apply text-2xl;
+      @apply font-bold;
+    }
+    h4 {
+      @apply text-xl;
+      @apply font-semibold;
+    }
+    h5 {
+      @apply text-lg;
+      @apply font-semibold;
+    }
+    h6 {
+      @apply text-sm;
+      @apply font-semibold;
+    }
+  }
+
 * {
     margin: 0px;
     list-style: none;
@@ -9,5 +36,5 @@
 }
 
 body {
-    background-color: rgb(145, 147, 103);
+    background-color: rgb(226, 123, 123);
 }
