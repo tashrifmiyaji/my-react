@@ -39,8 +39,17 @@ export const Todo = () => {
         return () => clearInterval(interval);
     },[])
 
-    console.log("hello!");
-    
+    // Delete Elements and Add a  All-Clear Button in To-Do App
+
+    const handleDeleteBtn = (currentTodo) => {
+        const updatedTodoLIst = todoList.filter((todo)=> todo !== currentTodo );
+        setTodoList(updatedTodoLIst)
+    }
+
+    const handleAllClearBtn = () => {
+       setTodoList([]);
+    }
+
     return(
         <>
         <div className="main-div">
@@ -68,13 +77,16 @@ export const Todo = () => {
                             <li key={index} className="todo-item">
                             <span>{currentTodo}</span>
                             <button className="check-btn"><FaCheckCircle /></button>
-                            <button className="delete-btn"><MdDelete /></button>
+                            <button className="delete-btn" onClick={()=> handleDeleteBtn(currentTodo)}><MdDelete /></button>
                             </li>
                             </>
                         )
                     })
                 }
             </ul>
+        </section>
+        <section>
+            <button className="allClear-btn" onClick={handleAllClearBtn}>All Clear</button>
         </section>
         </section>
         </div>

@@ -22,16 +22,28 @@
     background-image: linear-gradient(100deg, #001214, #001f29);
     color: white;
     transition: 0.3s linear;
-    overflow: hidden;
+    overflow: scroll;
     border-radius: 30px;
   }
+
+  /* Hide scrollbar for WebKit browsers */
+.todo-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.todo-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
   
   .header,
   .form,
   .datetime {
     margin: 0 1rem;
     min-height: 10vh;
-    width: 100%;
+    width: 90%;
   }
   
   .header {
@@ -41,7 +53,7 @@
     justify-content: space-around;
     font-size: 3rem;
     min-height: 25vh;
-    width: 100%;
+    width: 90%;
   }
   
   section h1 {
@@ -189,15 +201,16 @@
     text-decoration: none;
   }
   
-  .clear-btn {
+  .allClear-btn {
     background-color: #e74c3c;
     font-size: 1.6rem;
+    margin-bottom: 1rem;
     padding: 1rem 2.2rem;
-    border-radius: 0.3rem;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
   }
   
   .clear-btn:hover {
