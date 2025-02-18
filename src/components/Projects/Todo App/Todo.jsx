@@ -3,26 +3,48 @@ import { useState } from "react";
 import { TodoForm } from "./TodoForm";
 import { TodoList } from "./TodoList";
 import { TodoDate } from "./TodoDate";
+import { setTodoDataToLocalStorage, getTodoDataFromLocalStorage } from "./TodoLocalStorage";
 
 export const Todo = () => {
-	const [todoList, setTodoList] = useState([]);
+	const [todoList, setTodoList] = useState(getTodoDataFromLocalStorage());
 
 	const handleOnSubmit = (inputValue) => {
-		if (!inputValue) return;
+		const { id, content, checked } = inputValue;
 
-		if (todoList.includes(inputValue)) {
-			// setInputValue("");
-			return;
-		}
+		// to check if the input field is empty or not!
+		if (!content) return;
+
+		// to check if the data is already existing or not!
+		const ifTodoContentExist = todoList.find(
+			(currentTodo) => currentTodo.content === content
+		);
+		if (ifTodoContentExist) return;
 
 		setTodoList((prevTask) => [...prevTask, inputValue]);
+
 	};
+
+	// add data to local storage.
+	setTodoDataToLocalStorage(todoList)
 
 	// Delete Elements and Add a  All-Clear Button in To-Do App
 
 	const handleDeleteBtn = (currentTodo) => {
-		const updatedTodoLIst = todoList.filter((todo) => todo !== currentTodo);
+		const updatedTodoLIst = todoList.filter(
+			(todo) => todo.content !== currentTodo
+		);
 		setTodoList(updatedTodoLIst);
+	};
+
+	const HandleCheckBtn = (data) => {
+		const updateTodo = todoList.map((curTodo) => {
+			if (curTodo.content === data) {
+				return { ...curTodo, checked: !curTodo.checked };
+			} else {
+				return curTodo;
+			}
+		});
+		setTodoList(updateTodo)
 	};
 
 	const handleAllClearBtn = () => {
@@ -35,18 +57,20 @@ export const Todo = () => {
 				<section className="todo-container">
 					<header className="header">
 						<h1>Todo List</h1>
-                        <TodoDate/>
+						<TodoDate />
 					</header>
 					<TodoForm onAddTodo={handleOnSubmit} />
 					<section className="myUnOrdList">
 						<ul>
-							{todoList.map((currentTodo, index) => {
+							{todoList.map((currentTodo) => {
 								return (
 									<>
 										<TodoList
-											key={index}
-											data={currentTodo}
+											key={currentTodo.id}
+											data={currentTodo.content}
+											checked={currentTodo.checked}
 											onHandleDeleteBtn={handleDeleteBtn}
+											onHandleCheckBtn={HandleCheckBtn}
 										/>
 									</>
 								);

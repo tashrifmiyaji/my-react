@@ -84,6 +84,7 @@
     outline: none;
     /* border-radius: 15; */
     border-top-left-radius: 17px;
+    border-bottom-right-radius:17px ;
     border-bottom-left-radius: 17px;
     max-width: 500px;
     transition: background-color 200ms ease-in-out;

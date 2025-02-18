@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 export const TodoForm = ({onAddTodo}) => {
-        const [inputValue, setInputValue] = useState("");
+        const [inputValue, setInputValue] = useState({});
 
-        const handleInput = (event) => {
-            setInputValue(event);
+        const handleInput = (value) => {
+            setInputValue({id:value, content:value, checked: false});
         };
 
         const handleOnSubmit = (event) => {
             event.preventDefault();
             onAddTodo(inputValue)
-            setInputValue("");
+            setInputValue({id:"", content:"", checked: false});
         }
 
 	return (
@@ -26,7 +26,7 @@ export const TodoForm = ({onAddTodo}) => {
 							onChange={(event) =>
 								handleInput(event.target.value)
 							}
-							value={inputValue}
+							value={inputValue.content}
 						/>
 					</div>
 					<div>
