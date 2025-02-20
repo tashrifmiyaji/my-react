@@ -12,7 +12,6 @@ export const Todo = () => {
 	const [todoList, setTodoList] = useState(getTodoDataFromLocalStorage());
 
 	const handleOnSubmit = (inputValue) => {
-
 		// to check if the input field is empty or not!
 		if (!inputValue.content) return;
 

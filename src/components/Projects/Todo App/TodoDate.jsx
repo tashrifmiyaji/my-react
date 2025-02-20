@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const TodoDate = () => {
-    // Create a Real-Time Digital Clock in React – Display Current Date and Time in Todo App
+	// Create a Real-Time Digital Clock in React – Display Current Date and Time in Todo App
 	const [dateTime, setDateTime] = useState("");
 
 	useEffect(() => {
@@ -15,9 +15,9 @@ export const TodoDate = () => {
 		return () => clearInterval(interval);
 	}, []);
 
-    return(
-        <>
-        <h2 className="date-time">{dateTime}</h2>
-        </>
-    )
-}
+	return (
+		<>
+			<h2 className="date-time">{dateTime}</h2>
+		</>
+	);
+};
