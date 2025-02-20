@@ -1,16 +1,18 @@
 import { useState } from "react";
+import {todoItemAddingTime} from "./todoItemAddingTime"
 
 export const TodoForm = ({onAddTodo}) => {
         const [inputValue, setInputValue] = useState({});
+		const dateTime = todoItemAddingTime()
 
         const handleInput = (value) => {
-            setInputValue({id:value, content:value, checked: false});
+            setInputValue({id:value, content:value, dateTime, checked: false});
         };
 
         const handleOnSubmit = (event) => {
             event.preventDefault();
             onAddTodo(inputValue)
-            setInputValue({id:"", content:"", checked: false});
+            setInputValue({content:""});
         }
 
 	return (

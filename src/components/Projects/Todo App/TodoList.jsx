@@ -2,7 +2,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { ImRadioUnchecked } from "react-icons/im";
 
-export const TodoList = ({ data, checked, onHandleDeleteBtn, onHandleCheckBtn }) => {
+export const TodoList = ({ data, dateTime, checked, onHandleDeleteBtn, onHandleCheckBtn }) => {
 	const checkedBtnStyle = () => {
 		if (checked) {
 			return(
@@ -29,6 +29,7 @@ export const TodoList = ({ data, checked, onHandleDeleteBtn, onHandleCheckBtn })
 				>
 					<MdDelete />
 				</button>
+				<p className="todo-item-adding-time">{dateTime}</p>
 			</li>
 		</>
 	);

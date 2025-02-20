@@ -12,14 +12,13 @@ export const Todo = () => {
 	const [todoList, setTodoList] = useState(getTodoDataFromLocalStorage());
 
 	const handleOnSubmit = (inputValue) => {
-		const { id, content, checked } = inputValue;
 
 		// to check if the input field is empty or not!
-		if (!content) return;
+		if (!inputValue.content) return;
 
 		// to check if the data is already existing or not!
 		const ifTodoContentExist = todoList.find(
-			(currentTodo) => currentTodo.content === content
+			(currentTodo) => currentTodo.content === inputValue.content
 		);
 		if (ifTodoContentExist) return;
 
@@ -71,6 +70,7 @@ export const Todo = () => {
 											<TodoList
 												key={currentTodo.id}
 												data={currentTodo.content}
+												dateTime={currentTodo.dateTime}
 												checked={currentTodo.checked}
 												onHandleDeleteBtn={
 													handleDeleteBtn
