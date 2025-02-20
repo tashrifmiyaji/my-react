@@ -7,7 +7,7 @@
 
 .main-div {
   display: flex;
-  height: 100vh;
+  height: 94vh;
   justify-content: center;
   align-items: center;
 }
@@ -52,7 +52,7 @@
     flex-direction: column;
     justify-content: space-around;
     font-size: 3rem;
-    min-height: 25vh;
+    min-height: 20vh;
     width: 90%;
   }
   
@@ -71,7 +71,6 @@
     display: flex;
     font-size: 1.7rem;
     justify-content: center;
-    margin: 15px 0;
     padding: 0.8rem;
     width: 100%;
   }
@@ -79,7 +78,7 @@
   form input {
     padding: 10px;
     font-size: 1.8rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.01rem;
     border: none;
     outline: none;
     /* border-radius: 15; */
@@ -123,12 +122,7 @@
     min-width: 100px;
     background-color: #5dade2;
     color: var(--secondary-color);
-  }
-  
-  span {
-    margin-right: 3.2rem;
-  }
-  
+  }  
   .myUnOrdList {
     display: flex;
     justify-content: center;
@@ -138,18 +132,16 @@
   
   .todo-list {
     min-width: 25%;
-  
-    /* To remove the bullets of unordered list */
     list-style: none;
   }
   
   .todo-item {
-    margin: 2.4rem;
+    margin: 2rem;
     /*word-wrap: break-word;
       */ /*flex-wrap: wrap;
       */
     font-size: 20px;
-    color: #1c2833;
+    color: #141414;
     border-radius: 30px;
     transition: background-color 200ms ease-in-out;
     background-color: #f2f3f4;
@@ -157,7 +149,7 @@
     max-width: 35rem;
     padding: 1.6rem 3rem;
     display: grid;
-    grid-template-columns: 1fr 0.3fr 0.3fr;
+    grid-template-columns: 10fr 0fr 0fr;
     justify-content: start;
     gap: 1.6rem;
     /*align-items: center;
@@ -166,9 +158,9 @@
   }
   
   li span {
-    max-width: 20rem;
+    max-width: 25rem;
     padding: .5rem 0;
-    color: #a68947;
+    color: #131312;
   }
   
   .check-btn,
@@ -196,6 +188,7 @@
   
   .checkList {
     text-decoration: line-through;
+    font-style: italic;
   }
   
   .notCheckList {
@@ -217,3 +210,41 @@
   .clear-btn:hover {
     background-color: #8d1407;
   }
+
+  .creator {
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 15px 15px;
+    font-style: italic;
+}
+
+/* for mobile */
+@media screen and (max-width: 1000px) {
+  .todo-container {
+    height: 92vh;
+    width: 98vw;
+    padding-top: 2%;
+    color: white;
+  }
+  .date-time {
+    font-size: 1.4rem;
+  }
+  .todo-item {
+    font-size: 17px;
+    margin: 1.4rem;
+    min-width: 20rem;
+    padding: 1rem 1rem;
+    gap: .2rem;
+  }
+  .check-btn,
+  .delete-btn {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  form {
+    transform: translateY(-15px);
+  }
+}

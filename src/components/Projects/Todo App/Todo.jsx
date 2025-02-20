@@ -3,7 +3,10 @@ import { useState } from "react";
 import { TodoForm } from "./TodoForm";
 import { TodoList } from "./TodoList";
 import { TodoDate } from "./TodoDate";
-import { setTodoDataToLocalStorage, getTodoDataFromLocalStorage } from "./TodoLocalStorage";
+import {
+	setTodoDataToLocalStorage,
+	getTodoDataFromLocalStorage,
+} from "./TodoLocalStorage";
 
 export const Todo = () => {
 	const [todoList, setTodoList] = useState(getTodoDataFromLocalStorage());
@@ -20,12 +23,11 @@ export const Todo = () => {
 		);
 		if (ifTodoContentExist) return;
 
-		setTodoList((prevTask) => [...prevTask, inputValue]);
-
+		setTodoList((prevTask) => [inputValue, ...prevTask]);
 	};
 
 	// add data to local storage.
-	setTodoDataToLocalStorage(todoList)
+	setTodoDataToLocalStorage(todoList);
 
 	// Delete Elements and Add a  All-Clear Button in To-Do App
 
@@ -44,7 +46,7 @@ export const Todo = () => {
 				return curTodo;
 			}
 		});
-		setTodoList(updateTodo)
+		setTodoList(updateTodo);
 	};
 
 	const handleAllClearBtn = () => {
@@ -53,38 +55,49 @@ export const Todo = () => {
 
 	return (
 		<>
-			<div className="main-div">
-				<section className="todo-container">
-					<header className="header">
-						<h1>Todo List</h1>
-						<TodoDate />
-					</header>
-					<TodoForm onAddTodo={handleOnSubmit} />
-					<section className="myUnOrdList">
-						<ul>
-							{todoList.map((currentTodo) => {
-								return (
-									<>
-										<TodoList
-											key={currentTodo.id}
-											data={currentTodo.content}
-											checked={currentTodo.checked}
-											onHandleDeleteBtn={handleDeleteBtn}
-											onHandleCheckBtn={HandleCheckBtn}
-										/>
-									</>
-								);
-							})}
-						</ul>
+			<div>
+				<div className="main-div">
+					<section className="todo-container">
+						<header className="header">
+							<h1>Todo List</h1>
+							<TodoDate />
+						</header>
+						<TodoForm onAddTodo={handleOnSubmit} />
+						<section className="myUnOrdList">
+							<ul>
+								{todoList.map((currentTodo) => {
+									return (
+										<>
+											<TodoList
+												key={currentTodo.id}
+												data={currentTodo.content}
+												checked={currentTodo.checked}
+												onHandleDeleteBtn={
+													handleDeleteBtn
+												}
+												onHandleCheckBtn={
+													HandleCheckBtn
+												}
+											/>
+										</>
+									);
+								})}
+							</ul>
+						</section>
+						<section>
+							<button
+								className="allClear-btn"
+								onClick={handleAllClearBtn}
+							>
+								All Clear
+							</button>
+						</section>
 					</section>
-					<section>
-						<button
-							className="allClear-btn"
-							onClick={handleAllClearBtn}
-						>
-							All Clear
-						</button>
-					</section>
+				</div>
+				<section>
+					<footer className="creator">
+						<p>created by @tashrifmiyaji</p>
+					</footer>
 				</section>
 			</div>
 		</>
