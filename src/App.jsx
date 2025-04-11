@@ -8,6 +8,7 @@ import "./index.css";
 //  import { LiftingStateUp } from "./components/Lifting State Up/LiftingStateUp";
 //  import { ToggleSwitch } from "./components/Projects/Toggle Switch/Toggle Switch";
 //  import { Todo } from "./components/Projects/Todo App/Todo";
+ import { Counter } from "./components/Hook/Counter with useState";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 			{/* <LiftingStateUp/> */}
 			{/* <ToggleSwitch/> */}
 			{/* <Todo/> */}
+			<Counter/>
 		</>
 	);
 }
