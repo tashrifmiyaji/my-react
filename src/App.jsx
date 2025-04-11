@@ -7,7 +7,7 @@ import "./index.css";
 // import { DerivedState } from "./components/Derived State/Derived State";
 //  import { LiftingStateUp } from "./components/Lifting State Up/LiftingStateUp";
 //  import { ToggleSwitch } from "./components/Projects/Toggle Switch/Toggle Switch";
- import { Todo } from "./components/Projects/Todo App/Todo";
+//  import { Todo } from "./components/Projects/Todo App/Todo";
 
 function App() {
 	return (
@@ -20,7 +20,7 @@ function App() {
 			{/* <DerivedState/> */}
 			{/* <LiftingStateUp/> */}
 			{/* <ToggleSwitch/> */}
-			<Todo/>
+			{/* <Todo/> */}
 		</>
 	);
 }
