@@ -9,7 +9,8 @@ import "./index.css";
 //  import { ToggleSwitch } from "./components/Projects/Toggle Switch/Toggle Switch";
 //  import { Todo } from "./components/Projects/Todo App/Todo";
 //  import { Counter } from "./components/Hook/Counter with useState";
-import { SignUpHandlingWithHardWay } from "./components/Hook/Form Handling/sign-upHandlingWithHardWay";
+// import { SignUpHandlingWithHardWay } from "./components/Hook/Form Handling/sign-upHandlingWithHardWay";
+import { SignUpHandlingWithRightWay } from "./components/Hook/Form Handling/sign-upHandlingWithRightWay";
 
 function App() {
 	return (
@@ -24,7 +25,8 @@ function App() {
 			{/* <ToggleSwitch/> */}
 			{/* <Todo/> */}
 			{/* <Counter/> */}
-			<SignUpHandlingWithHardWay/>
+			{/* <SignUpHandlingWithHardWay/> */}
+			<SignUpHandlingWithRightWay/>
 		</>
 	);
 }
