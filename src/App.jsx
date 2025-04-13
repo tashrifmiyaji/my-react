@@ -10,7 +10,8 @@ import "./index.css";
 //  import { Todo } from "./components/Projects/Todo App/Todo";
 //  import { Counter } from "./components/Hook/Counter with useState";
 // import { SignUpHandlingWithHardWay } from "./components/Hook/Form Handling/sign-upHandlingWithHardWay";
-import { SignUpHandlingWithRightWay } from "./components/Hook/Form Handling/sign-upHandlingWithRightWay";
+// import { SignUpHandlingWithRightWay } from "./components/Hook/Form Handling/sign-upHandlingWithRightWay";
+import { ReactUseEffect } from "./components/Hook/useEffect/useEffect";
 
 function App() {
 	return (
@@ -26,7 +27,8 @@ function App() {
 			{/* <Todo/> */}
 			{/* <Counter/> */}
 			{/* <SignUpHandlingWithHardWay/> */}
-			<SignUpHandlingWithRightWay/>
+			{/* <SignUpHandlingWithRightWay/> */}
+			<ReactUseEffect/>
 		</>
 	);
 }
