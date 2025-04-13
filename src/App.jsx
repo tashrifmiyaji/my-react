@@ -11,7 +11,8 @@ import "./index.css";
 //  import { Counter } from "./components/Hook/Counter with useState";
 // import { SignUpHandlingWithHardWay } from "./components/Hook/Form Handling/sign-upHandlingWithHardWay";
 // import { SignUpHandlingWithRightWay } from "./components/Hook/Form Handling/sign-upHandlingWithRightWay";
-import { ReactUseEffect } from "./components/Hook/useEffect/useEffect";
+// import { ReactUseEffect } from "./components/Hook/useEffect/useEffect";
+import { ReactUseEffect2 } from "./components/Hook/useEffect/useEffect-2";
 
 function App() {
 	return (
@@ -28,7 +29,8 @@ function App() {
 			{/* <Counter/> */}
 			{/* <SignUpHandlingWithHardWay/> */}
 			{/* <SignUpHandlingWithRightWay/> */}
-			<ReactUseEffect/>
+			{/* <ReactUseEffect/> */}
+			<ReactUseEffect2/>
 		</>
 	);
 }
