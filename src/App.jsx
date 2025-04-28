@@ -12,7 +12,8 @@ import "./index.css";
 // import { SignUpHandlingWithHardWay } from "./components/Hook/Form Handling/sign-upHandlingWithHardWay";
 // import { SignUpHandlingWithRightWay } from "./components/Hook/Form Handling/sign-upHandlingWithRightWay";
 // import { ReactUseEffect } from "./components/Hook/useEffect/useEffect";
-import { ReactUseEffect2 } from "./components/Hook/useEffect/useEffect-2";
+// import { ReactUseEffect2 } from "./components/Hook/useEffect/useEffect-2";
+import {CleanUp} from "./components/Hook/useEffect/cleanUp"
 
 function App() {
 	return (
@@ -30,7 +31,8 @@ function App() {
 			{/* <SignUpHandlingWithHardWay/> */}
 			{/* <SignUpHandlingWithRightWay/> */}
 			{/* <ReactUseEffect/> */}
-			<ReactUseEffect2/>
+			{/* <ReactUseEffect2/> */}
+			< CleanUp/>
 		</>
 	);
 }
