@@ -13,7 +13,8 @@ import "./index.css";
 // import { SignUpHandlingWithRightWay } from "./components/Hook/Form Handling/sign-upHandlingWithRightWay";
 // import { ReactUseEffect } from "./components/Hook/useEffect/useEffect";
 // import { ReactUseEffect2 } from "./components/Hook/useEffect/useEffect-2";
-import {CleanUp} from "./components/Hook/useEffect/cleanUp"
+// import {CleanUp} from "./components/Hook/useEffect/cleanUp"
+import {FetchingData} from "./components/Fetching API Data/fetchingData"
 
 function App() {
 	return (
@@ -32,7 +33,8 @@ function App() {
 			{/* <SignUpHandlingWithRightWay/> */}
 			{/* <ReactUseEffect/> */}
 			{/* <ReactUseEffect2/> */}
-			< CleanUp/>
+			{/* < CleanUp/> */}
+			<FetchingData/>
 		</>
 	);
 }
