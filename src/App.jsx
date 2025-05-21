@@ -14,7 +14,8 @@ import "./index.css";
 // import { ReactUseEffect } from "./components/Hook/useEffect/useEffect";
 // import { ReactUseEffect2 } from "./components/Hook/useEffect/useEffect-2";
 // import {CleanUp} from "./components/Hook/useEffect/cleanUp"
-import {FetchingData} from "./components/Fetching API Data/fetchingData"
+// import {FetchingData} from "./components/Fetching API Data/fetchingData"
+import { Pokemon } from "./components/Projects/Pokemon Cards/pokemon"
 
 function App() {
 	return (
@@ -34,7 +35,8 @@ function App() {
 			{/* <ReactUseEffect/> */}
 			{/* <ReactUseEffect2/> */}
 			{/* < CleanUp/> */}
-			<FetchingData/>
+			{/* <FetchingData/> */}
+			<Pokemon/>
 		</>
 	);
 }
