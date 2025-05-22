@@ -16,7 +16,8 @@ import "./index.css";
 // import {CleanUp} from "./components/Hook/useEffect/cleanUp"
 // import {FetchingData} from "./components/Fetching API Data/fetchingData"
 // import { Pokemon } from "./components/Projects/Pokemon Cards/pokemon"
-import { UseRef } from "./components/Hook/useRef/index";
+// import { UseRef } from "./components/Hook/useRef/index";
+import { ForwardRef } from "./components/Hook/useRef/forwardRef";
 
 function App() {
 	return (
@@ -38,7 +39,8 @@ function App() {
 			{/* < CleanUp/> */}
 			{/* <FetchingData/> */}
 			{/* <Pokemon /> */}
-			<UseRef />
+			{/* <UseRef /> */}
+			<ForwardRef/>
 		</>
 	);
 }
