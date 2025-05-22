@@ -1,5 +1,5 @@
 import "./index.css";
-// import { Netflix } from "./components/netflixCard/NetflixCard";	
+// import { Netflix } from "./components/netflixCard/NetflixCard";
 // import {EventHandling} from "./components/reactEvent/eventHandling"
 // import { EventProps } from "./components/reactEvent/eventProps";
 // import { State } from "./components/Hook/State";
@@ -15,7 +15,8 @@ import "./index.css";
 // import { ReactUseEffect2 } from "./components/Hook/useEffect/useEffect-2";
 // import {CleanUp} from "./components/Hook/useEffect/cleanUp"
 // import {FetchingData} from "./components/Fetching API Data/fetchingData"
-import { Pokemon } from "./components/Projects/Pokemon Cards/pokemon"
+// import { Pokemon } from "./components/Projects/Pokemon Cards/pokemon"
+import { UseRef } from "./components/Hook/useRef/index";
 
 function App() {
 	return (
@@ -36,7 +37,8 @@ function App() {
 			{/* <ReactUseEffect2/> */}
 			{/* < CleanUp/> */}
 			{/* <FetchingData/> */}
-			<Pokemon/>
+			{/* <Pokemon /> */}
+			<UseRef />
 		</>
 	);
 }
