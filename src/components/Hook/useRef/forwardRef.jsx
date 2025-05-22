@@ -17,12 +17,22 @@ export const ForwardRef = () => {
 				</header>
 				<div className="h-screen w-full flex justify-center mt-16">
 					<form onSubmit={formHandling}>
-						<BeforeReact19
+						{/* <BeforeReact19
 							label="username"
 							type="text"
 							ref={username}
 						/>
 						<BeforeReact19
+							label="password"
+							type="password"
+							ref={password}
+						/> */}
+                        <AfterReact19
+							label="username"
+							type="text"
+							ref={username}
+						/>
+						<AfterReact19
 							label="password"
 							type="password"
 							ref={password}
@@ -43,14 +53,26 @@ export const ForwardRef = () => {
 	);
 };
 
-const BeforeReact19 = forwardRef((props, ref) => {
+// const BeforeReact19 = forwardRef((props, ref) => {
+// 	const id = useId();
+// 	return (
+// 		<>
+// 			<div className="m-8">
+// 				<label htmlFor={id}>{props.label} : </label>
+// 				<input type={props.type} ref={ref} />
+// 			</div>
+// 		</>
+// 	);
+// });
+
+const AfterReact19 = (props) => {
 	const id = useId();
 	return (
 		<>
 			<div className="m-8">
 				<label htmlFor={id}>{props.label} : </label>
-				<input type={props.type} ref={ref} />
+				<input type={props.type} ref={props.ref} />
 			</div>
 		</>
 	);
-});
+};
