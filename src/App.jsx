@@ -17,7 +17,11 @@ import "./index.css";
 // import {FetchingData} from "./components/Fetching API Data/fetchingData"
 // import { Pokemon } from "./components/Projects/Pokemon Cards/pokemon"
 // import { UseRef } from "./components/Hook/useRef/index";
-import { ForwardRef } from "./components/Hook/useRef/forwardRef";
+// import { ForwardRef } from "./components/Hook/useRef/forwardRef";
+//
+import { BioProvider } from "./components/Hook/context API/index";
+import { Home } from "./components/Hook/context API/Home";
+import { About } from "./components/Hook/context API/about";
 
 function App() {
 	return (
@@ -40,7 +44,11 @@ function App() {
 			{/* <FetchingData/> */}
 			{/* <Pokemon /> */}
 			{/* <UseRef /> */}
-			<ForwardRef/>
+			{/* <ForwardRef/> */}
+			<BioProvider>
+				<Home/>
+				<About/>
+			</BioProvider>
 		</>
 	);
 }
