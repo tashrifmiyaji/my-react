@@ -19,9 +19,15 @@ import "./index.css";
 // import { UseRef } from "./components/Hook/useRef/index";
 // import { ForwardRef } from "./components/Hook/useRef/forwardRef";
 //
-import { BioProvider } from "./components/Hook/context API/index";
-import { Home } from "./components/Hook/context API/Home";
-import { About } from "./components/Hook/context API/about";
+// import { BioProvider } from "./components/Hook/context API/index";
+// import { Home } from "./components/Hook/context API/Home";
+// import { About } from "./components/Hook/context API/about";
+import {
+	ThemeProvider,
+	DarkAndLightMode,
+} from "./components/Hook/context API/dark&lightThemeWithContext";
+
+
 
 function App() {
 	return (
@@ -45,10 +51,15 @@ function App() {
 			{/* <Pokemon /> */}
 			{/* <UseRef /> */}
 			{/* <ForwardRef/> */}
-			<BioProvider>
+			//
+			{/* <BioProvider>
 				<Home/>
 				<About/>
-			</BioProvider>
+			</BioProvider> */}
+			//
+			<ThemeProvider>
+				<DarkAndLightMode />
+			</ThemeProvider>
 		</>
 	);
 }
