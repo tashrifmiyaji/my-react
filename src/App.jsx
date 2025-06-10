@@ -22,12 +22,12 @@ import "./index.css";
 // import { BioProvider } from "./components/Hook/context API/index";
 // import { Home } from "./components/Hook/context API/Home";
 // import { About } from "./components/Hook/context API/about";
-import {
-	ThemeProvider,
-	DarkAndLightMode,
-} from "./components/Hook/context API/dark&lightThemeWithContext";
+// import {
+// 	ThemeProvider,
+// 	DarkAndLightMode,
+// } from "./components/Hook/context API/dark&lightThemeWithContext";
 
-
+import { Test1_parent } from "./components/Hook/context API/contextApiAlternativeTest";
 
 function App() {
 	return (
@@ -57,9 +57,11 @@ function App() {
 				<About/>
 			</BioProvider> */}
 			//
-			<ThemeProvider>
+			{/* <ThemeProvider>
 				<DarkAndLightMode />
-			</ThemeProvider>
+			</ThemeProvider> */}
+			//
+			<Test1_parent/>
 		</>
 	);
 }
