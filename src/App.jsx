@@ -27,7 +27,11 @@ import "./index.css";
 // 	DarkAndLightMode,
 // } from "./components/Hook/context API/dark&lightThemeWithContext";
 
-import { Test1_parent } from "./components/Hook/context API/contextApiAlternativeTest";
+// import { Test1_parent } from "./components/Hook/context API/contextApiAlternativeTest";
+
+import { UserContextProvider } from "./components/Hook/context API-2/context/userContextProvider";
+import Signup from "./components/Hook/context API-2/components/Signup";
+import Profile from "./components/Hook/context API-2/components/Profile";
 
 function App() {
 	return (
@@ -51,17 +55,21 @@ function App() {
 			{/* <Pokemon /> */}
 			{/* <UseRef /> */}
 			{/* <ForwardRef/> */}
-			//
+			
 			{/* <BioProvider>
 				<Home/>
 				<About/>
 			</BioProvider> */}
-			//
+			
 			{/* <ThemeProvider>
 				<DarkAndLightMode />
 			</ThemeProvider> */}
-			//
-			<Test1_parent/>
+			
+			{/* <Test1_parent/> */}
+			<UserContextProvider>
+				<Signup/>
+				<Profile/>
+			</UserContextProvider>
 		</>
 	);
 }
