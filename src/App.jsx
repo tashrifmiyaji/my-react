@@ -29,9 +29,11 @@ import "./index.css";
 
 // import { Test1_parent } from "./components/Hook/context API/contextApiAlternativeTest";
 
-import { UserContextProvider } from "./components/Hook/context API-2/context/userContextProvider";
-import Signup from "./components/Hook/context API-2/components/Signup";
-import Profile from "./components/Hook/context API-2/components/Profile";
+// import { UserContextProvider } from "./components/Hook/context API-2/context/userContextProvider";
+// import Signup from "./components/Hook/context API-2/components/Signup";
+// import Profile from "./components/Hook/context API-2/components/Profile";
+
+import { UseReducerCom } from "./components/Hook/useReducer/useReducer";
 
 function App() {
 	return (
@@ -66,10 +68,13 @@ function App() {
 			</ThemeProvider> */}
 			
 			{/* <Test1_parent/> */}
-			<UserContextProvider>
+
+			{/* <UserContextProvider>
 				<Signup/>
 				<Profile/>
-			</UserContextProvider>
+			</UserContextProvider> */}
+
+			<UseReducerCom/>
 		</>
 	);
 }
