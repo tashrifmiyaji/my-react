@@ -33,7 +33,8 @@ import "./index.css";
 // import Signup from "./components/Hook/context API-2/components/Signup";
 // import Profile from "./components/Hook/context API-2/components/Profile";
 
-import { UseReducerCom } from "./components/Hook/useReducer/useReducer";
+// import { UseReducerCom } from "./components/Hook/useReducer/useReducer";
+import { MoreOptimizedUseReducerCom } from "./components/Hook/useReducer/more optimized useReducer";
 
 function App() {
 	return (
@@ -74,7 +75,8 @@ function App() {
 				<Profile/>
 			</UserContextProvider> */}
 
-			<UseReducerCom/>
+			{/* <UseReducerCom/> */}
+			<MoreOptimizedUseReducerCom/>
 		</>
 	);
 }
