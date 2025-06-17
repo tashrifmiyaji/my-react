@@ -34,7 +34,8 @@ import "./index.css";
 // import Profile from "./components/Hook/context API-2/components/Profile";
 
 // import { UseReducerCom } from "./components/Hook/useReducer/useReducer";
-import { MoreOptimizedUseReducerCom } from "./components/Hook/useReducer/more optimized useReducer";
+// import { MoreOptimizedUseReducerCom } from "./components/Hook/useReducer/more optimized useReducer";
+import { CounterForReactMemo } from "./components/Hook/Memo/Counter";
 
 function App() {
 	return (
@@ -76,7 +77,8 @@ function App() {
 			</UserContextProvider> */}
 
 			{/* <UseReducerCom/> */}
-			<MoreOptimizedUseReducerCom/>
+			{/* <MoreOptimizedUseReducerCom/> */}
+			<CounterForReactMemo/>
 		</>
 	);
 }
