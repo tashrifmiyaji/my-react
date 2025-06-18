@@ -35,7 +35,8 @@ import "./index.css";
 
 // import { UseReducerCom } from "./components/Hook/useReducer/useReducer";
 // import { MoreOptimizedUseReducerCom } from "./components/Hook/useReducer/more optimized useReducer";
-import { CounterForReactMemo } from "./components/Hook/Memo/Counter";
+// import { CounterForReactMemo } from "./components/Hook/Memo/Counter";
+import { UseMemo } from "./components/Hook/Memo/useMemo/useMemo"
 
 function App() {
 	return (
@@ -78,7 +79,8 @@ function App() {
 
 			{/* <UseReducerCom/> */}
 			{/* <MoreOptimizedUseReducerCom/> */}
-			<CounterForReactMemo/>
+			{/* <CounterForReactMemo/> */}
+			<UseMemo/>
 		</>
 	);
 }
