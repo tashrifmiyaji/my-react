@@ -1,0 +1,10 @@
+react.memo puro akti component ke re-render kora ke block kore jotokkhon na oi component e pathano props change na hoy!
+and useMemo kono akti nirdisto function er valu jodi change na hoy tokhon oi function ke 2nd bar call na kore sorasori ager value ta diye diye.
+
+//
+react.memo te props hisebe object pathale tokhon oi object ti jodi change na hoy tarporo component ke change re-render kore pele
+karon opbject emon akti jinish ja protibar component render howar por vitore vitore oi object ti notun aktu jaygay store hoy thake!
+tai bahir theke object er nam oporibortito thakleo component mone kore je change hoise!
+tai props hisebe object pathale react.memo use kora sotteo re-render hoy!
+
+eitir jonno amra object ke props hisebe pathanor age useMemo benohar korte pari!
