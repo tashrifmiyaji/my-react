@@ -38,7 +38,8 @@ import "./index.css";
 // import { CounterForReactMemo } from "./components/Hook/Memo/Counter";
 // import { UseMemo } from "./components/Hook/Memo/useMemo/useMemo"
 // import { CounterWithReactMemoAndUseMemo } from "./components/Hook/Memo/memo with useMemo/Counter"
-import { UseCAllBack } from "./components/Hook/Memo/useCallBack/UseCallBack"
+// import { UseCAllBack } from "./components/Hook/Memo/useCallBack/UseCallBack"
+import  ReactMovieWebsite  from "./components/Projects/React Movie website/app";
 
 function App() {
 	return (
@@ -84,7 +85,8 @@ function App() {
 			{/* <CounterForReactMemo/> */}
 			{/* <UseMemo/> */}
 			{/* <CounterWithReactMemoAndUseMemo/> */}
-			<UseCAllBack/>
+			{/* <UseCAllBack/> */}
+			<ReactMovieWebsite/>
 		</>
 	);
 }
