@@ -1,0 +1,37 @@
+import { createBrowserRouter, RouterProvider } from "react-router";
+import AppLayOut from "./layOut/AppLayOut";
+import { Home } from "./Pages/Home";
+import { About } from "./Pages/About";
+import { Contact } from "./Pages/Contact";
+import { Movie } from "./Pages/Movie";
+
+const ReactMovieWebsite = () => {
+	const router = createBrowserRouter([
+		{
+			path: "/",
+			element: <AppLayOut />,
+			children: [
+				{
+					path: "/",
+					element: <Home />,
+				},
+				{
+					path: "/about",
+					element: <About />,
+				},
+				{
+					path: "/contact",
+					element: <Contact />,
+				},
+				{
+					path: "/movie",
+					element: <Movie />,
+				},
+			],
+		},
+	]);
+
+	return <RouterProvider router={router} />;
+};
+
+export default ReactMovieWebsite;
