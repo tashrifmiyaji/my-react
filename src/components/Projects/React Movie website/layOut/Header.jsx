@@ -13,7 +13,7 @@ export const Header = () => {
 				<div className="container">
 					<div className="navbar-brand">
 						<NavLink to="index">
-							<p>Tashrif-miyaji</p>
+							<p>Tashrif-Miyaji</p>
 						</NavLink>
 					</div>
 
