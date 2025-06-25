@@ -6,6 +6,7 @@ import { About } from "./Pages/About";
 import { Contact } from "./Pages/Contact";
 import { Movie } from "./Pages/Movie";
 import { ErrorPage } from "./Pages/ErrorPage";
+import { getMoviesData } from "./api/moviesData";
 
 const ReactMovieWebsite = () => {
 	const router = createBrowserRouter([
@@ -23,12 +24,13 @@ const ReactMovieWebsite = () => {
 					element: <About />,
 				},
 				{
-					path: "/contact",
-					element: <Contact />,
-				},
-				{
 					path: "/movie",
 					element: <Movie />,
+					loader: getMoviesData,
+				},
+				{
+					path: "/contact",
+					element: <Contact />,
 				},
 			],
 		},
