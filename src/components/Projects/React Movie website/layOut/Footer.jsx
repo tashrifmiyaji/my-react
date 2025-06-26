@@ -13,21 +13,21 @@ export const Footer = () => {
 						alt="cards"
 					/>
 				</div>
-				<div className="content_2">
+				<div className="content_2 text-yellow-50">
 					<h4>Other Things</h4>
 					<a href="#">Songs</a>
 					<a href="#">drama</a>
 					<a href="#">series</a>
 					<a href="#">short films</a>
 				</div>
-				<div className="content_3">
+				<div className="content_3 text-yellow-50">
 					<h4>Experience</h4>
 					<a href="./contact.html">Contact Us</a>
 					<a href="" target="_blank">
 						Payment Method
 					</a>
 				</div>
-				<div className="content_4">
+				<div className="content_4 text-yellow-50">
 					<h4>NEWSLETTER</h4>
 					<p>
 						Be the first to know about new
