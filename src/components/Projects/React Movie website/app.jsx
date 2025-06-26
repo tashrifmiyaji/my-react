@@ -3,7 +3,7 @@ import "./css/app.css";
 import AppLayOut from "./layOut/AppLayOut";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
-import { Contact } from "./Pages/Contact";
+import { Contact, contactData } from "./Pages/Contact";
 import { Movie } from "./Pages/Movie";
 import { ErrorPage } from "./Pages/ErrorPage";
 import { getMoviesData } from "./api/moviesData";
@@ -37,6 +37,7 @@ const ReactMovieWebsite = () => {
 				},
 				{
 					path: "/contact",
+					action: contactData,
 					element: <Contact />,
 				},
 			],
