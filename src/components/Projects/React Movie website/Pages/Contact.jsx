@@ -1,6 +1,8 @@
 import {useEffect  } from "react";
 import { Form, useActionData  } from "react-router";
 
+import contactSideImg from "../public/contact.png";
+
 export const contactData = async ({ request }) => {
 	try {
 		const res = await request.formData();
@@ -93,7 +95,7 @@ export const Contact = () => {
 						<div className="contact-image">
 							<figure>
 								<img
-									src="/contact.png"
+									src={contactSideImg}
 									alt="contact pic"
 									className="contact_image"
 								/>
