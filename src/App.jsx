@@ -40,7 +40,8 @@ import "./index.css";
 // import { CounterWithReactMemoAndUseMemo } from "./components/Hook/Memo/memo with useMemo/Counter"
 // import { UseCAllBack } from "./components/Hook/Memo/useCallBack/UseCallBack"
 // import ReactMovieWebsite from "./components/Projects/React Movie website/app";
-import React_App_With_Axios_For_CRUD_Operations from "./components//Projects/React App with Axios For CRUD Operations/app"
+// import React_App_With_Axios_For_CRUD_Operations from "./components//Projects/React App with Axios For CRUD Operations/app"
+import { Accordion } from "./components/Projects/Accordion App/components/UI/Accordion";
 
 function App() {
 	return (
@@ -88,7 +89,8 @@ function App() {
 			{/* <CounterWithReactMemoAndUseMemo/> */}
 			{/* <UseCAllBack/> */}
 			{/* <ReactMovieWebsite /> */}
-			<React_App_With_Axios_For_CRUD_Operations />
+			{/* <React_App_With_Axios_For_CRUD_Operations /> */}
+			<Accordion/>
 		</>
 	);
 }
