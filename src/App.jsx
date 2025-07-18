@@ -41,7 +41,8 @@ import "./index.css";
 // import { UseCAllBack } from "./components/Hook/Memo/useCallBack/UseCallBack"
 // import ReactMovieWebsite from "./components/Projects/React Movie website/app";
 // import React_App_With_Axios_For_CRUD_Operations from "./components//Projects/React App with Axios For CRUD Operations/app"
-import { Accordion } from "./components/Projects/Accordion App/components/UI/Accordion";
+// import { Accordion } from "./components/Projects/Accordion App/components/UI/Accordion";
+import WorldExplore from "./components/Projects/world-explore/app";
 
 function App() {
 	return (
@@ -90,7 +91,8 @@ function App() {
 			{/* <UseCAllBack/> */}
 			{/* <ReactMovieWebsite /> */}
 			{/* <React_App_With_Axios_For_CRUD_Operations /> */}
-			<Accordion/>
+			{/* <Accordion/> */}
+			<WorldExplore/>
 		</>
 	);
 }
