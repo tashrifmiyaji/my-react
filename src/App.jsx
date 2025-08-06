@@ -42,7 +42,8 @@ import "./index.css";
 // import ReactMovieWebsite from "./Projects/React Movie website/app";
 // import React_App_With_Axios_For_CRUD_Operations from "./component/React App with Axios For CRUD Operations/app"
 // import { Accordion } from "./Projects/Accordion App/components/UI/Accordion";
-import WorldExplore from "./Projects/world-explore/app";
+// import WorldExplore from "./Projects/world-explore/app";
+import { TanStackQuery } from "./TanStack Query/app";
 
 function App() {
 	return (
@@ -92,7 +93,8 @@ function App() {
 			{/* <ReactMovieWebsite /> */}
 			{/* <React_App_With_Axios_For_CRUD_Operations /> */}
 			{/* <Accordion/> */}
-			<WorldExplore/>
+			{/* <WorldExplore/> */}
+			<TanStackQuery/>
 		</>
 	);
 }
