@@ -1,4 +1,5 @@
 import "./index.css";
+//
 // import { Netflix } from "./components/netflixCard/NetflixCard";
 // import {EventHandling} from "./components/reactEvent/eventHandling"
 // import { EventProps } from "./components/reactEvent/eventProps";
@@ -43,7 +44,8 @@ import "./index.css";
 // import React_App_With_Axios_For_CRUD_Operations from "./component/React App with Axios For CRUD Operations/app"
 // import { Accordion } from "./Projects/Accordion App/components/UI/Accordion";
 // import WorldExplore from "./Projects/world-explore/app";
-import { TanStackQuery } from "./TanStack Query/app";
+// import { TanStackQuery } from "./TanStack Query/app";
+import { Redux } from "./redux/app";
 
 function App() {
 	return (
@@ -94,7 +96,8 @@ function App() {
 			{/* <React_App_With_Axios_For_CRUD_Operations /> */}
 			{/* <Accordion/> */}
 			{/* <WorldExplore/> */}
-			<TanStackQuery/>
+			{/* <TanStackQuery/> */}
+			<Redux />
 		</>
 	);
 }
