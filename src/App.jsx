@@ -45,7 +45,8 @@ import "./index.css";
 // import { Accordion } from "./Projects/Accordion App/components/UI/Accordion";
 // import WorldExplore from "./Projects/world-explore/app";
 // import { TanStackQuery } from "./TanStack Query/app";
-import { Redux } from "./redux/app";
+// import { Redux } from "./redux/app";
+import { CurrencyConverter } from "./Projects/Currency Converter/app";
 
 function App() {
 	return (
@@ -97,7 +98,8 @@ function App() {
 			{/* <Accordion/> */}
 			{/* <WorldExplore/> */}
 			{/* <TanStackQuery/> */}
-			<Redux />
+			{/* <Redux /> */}
+			<CurrencyConverter />
 		</>
 	);
 }
