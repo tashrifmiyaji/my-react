@@ -46,7 +46,8 @@ import "./index.css";
 // import WorldExplore from "./Projects/world-explore/app";
 // import { TanStackQuery } from "./TanStack Query/app";
 // import { Redux } from "./redux/app";
-import { CurrencyConverter } from "./Projects/Currency Converter/app";
+// import { CurrencyConverter } from "./Projects/Currency Converter/app";
+import { ReduxToolkit } from "./Redux Toolkit/todo app with redux toolkit/app";
 
 function App() {
 	return (
@@ -99,7 +100,8 @@ function App() {
 			{/* <WorldExplore/> */}
 			{/* <TanStackQuery/> */}
 			{/* <Redux /> */}
-			<CurrencyConverter />
+			{/* <CurrencyConverter /> */}
+			<ReduxToolkit />
 		</>
 	);
 }
