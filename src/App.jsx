@@ -47,7 +47,8 @@ import "./index.css";
 // import { TanStackQuery } from "./TanStack Query/app";
 // import { Redux } from "./redux/app";
 // import { CurrencyConverter } from "./Projects/Currency Converter/app";
-import { ReduxToolkit } from "./Redux Toolkit/todo app with redux toolkit/app";
+// import { ReduxToolkit } from "./Redux Toolkit/todo app with redux toolkit/app";
+import { CurrencyConverterWithReactQuery } from "./Projects/Currency Converter with reactQuery & axios/main";
 
 function App() {
 	return (
@@ -101,7 +102,8 @@ function App() {
 			{/* <TanStackQuery/> */}
 			{/* <Redux /> */}
 			{/* <CurrencyConverter /> */}
-			<ReduxToolkit />
+			{/* <ReduxToolkit /> */}
+			<CurrencyConverterWithReactQuery />
 		</>
 	);
 }
