@@ -5,7 +5,7 @@ import App from "./App.jsx";
 // import '../src/redux/store.jsx'
 import { Provider } from "react-redux";
 // import { store } from "./redux/store2.jsx";
-import { store } from "./Redux Toolkit/todo app with redux toolkit/store";
+import { store } from "./Redux Toolkit/todo app with RTK slice/store";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>

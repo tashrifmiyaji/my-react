@@ -48,7 +48,8 @@ import "./index.css";
 // import { Redux } from "./redux/app";
 // import { CurrencyConverter } from "./Projects/Currency Converter/app";
 // import { ReduxToolkit } from "./Redux Toolkit/todo app with redux toolkit/app";
-import { CurrencyConverterWithReactQuery } from "./Projects/Currency Converter with reactQuery & axios/main";
+// import { CurrencyConverterWithReactQuery } from "./Projects/Currency Converter with reactQuery & axios/main";
+import { RTK } from "./Redux Toolkit/todo app with RTK slice/app";
 
 function App() {
 	return (
@@ -103,7 +104,8 @@ function App() {
 			{/* <Redux /> */}
 			{/* <CurrencyConverter /> */}
 			{/* <ReduxToolkit /> */}
-			<CurrencyConverterWithReactQuery />
+			{/* <CurrencyConverterWithReactQuery /> */}
+			<RTK />
 		</>
 	);
 }
